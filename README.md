@@ -1,5 +1,5 @@
 # Dictionary
-### Project được viết bằng ngôn ngữ C++
+### Project được viết bằng ngôn ngữ C++ áp dụng các kiến thức về Cấu trúc dữ liệu và giải thuật
 1. Giao diện chương trình
 ![image](https://user-images.githubusercontent.com/76239513/153720819-ce8f6ea0-fe18-4484-8515-06e9ac83da59.png)
 
