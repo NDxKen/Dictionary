@@ -23,46 +23,12 @@ void resizeConsole(SHORT width, SHORT height)
 	SetConsoleScreenBufferSize(hConsoleOutput, crd);
 }
 
-// Ham xoa man hinh khong bi dut(lag).
-void clrscr(void)
-{
-	CONSOLE_SCREEN_BUFFER_INFO screen_buffer_info;
-	COORD Home = { 0, 0 };
-	DWORD dummy;
-
-	hConsoleOutput = GetStdHandle(STD_INPUT_HANDLE);
-	GetConsoleScreenBufferInfo(hConsoleOutput, &screen_buffer_info);
-
-	FillConsoleOutputCharacter(hConsoleOutput, ' ', screen_buffer_info.dwSize.X * screen_buffer_info.dwSize.Y, Home, &dummy);
-	screen_buffer_info.dwCursorPosition.X = 0;
-	screen_buffer_info.dwCursorPosition.Y = 0;
-	SetConsoleCursorPosition(hConsoleOutput, screen_buffer_info.dwCursorPosition);
-}
-
 // Ham dich chuyen con tro den toa do x, y.
 void gotoXY(SHORT x, SHORT y)
 {
 	COORD Cursor_an_Pos = { x, y };
 	hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleCursorPosition(hConsoleOutput, Cursor_an_Pos);
-}
-
-// Tra ve vi tri x hien tai.
-SHORT wherex()
-{
-	CONSOLE_SCREEN_BUFFER_INFO coninfo;
-	hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
-	GetConsoleScreenBufferInfo(hConsoleOutput, &coninfo);
-	return coninfo.dwCursorPosition.X;
-}
-
-// Tra ve vi tri y hien tai.
-SHORT wherey()
-{
-	CONSOLE_SCREEN_BUFFER_INFO coninfo;
-	hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
-	GetConsoleScreenBufferInfo(hConsoleOutput, &coninfo);
-	return coninfo.dwCursorPosition.Y;
 }
 
 // Ham to mau.
@@ -127,27 +93,6 @@ void setColorBGTextXY(SHORT x, SHORT y, WORD color, WORD background, LPSTR str, 
 
 	resettextattr();
 	//setColor(7);
-}
-
-// Ham an hien con tro.
-void Cursor(BOOL bVisible, DWORD dwSize)
-{
-	CONSOLE_CURSOR_INFO ConsoleCursorInfo;
-	ConsoleCursorInfo.bVisible = bVisible;
-	ConsoleCursorInfo.dwSize = dwSize; // Phan tram bao trum o cua con tro chuot
-	SetConsoleCursorInfo(hConsoleOutput, &ConsoleCursorInfo);
-}
-
-// Xoa so luong dong, SStartPos - Vi tri bat dau xoa, SNumberRow so luong dong can xoa.
-void deleteRow(SHORT SStartPos, SHORT SNumberRow)
-{
-	CONSOLE_SCREEN_BUFFER_INFO  ConsoleInfo;
-	COORD Pos = { 0, SStartPos };
-	DWORD Tmp;
-	GetConsoleScreenBufferInfo(hConsoleOutput, &ConsoleInfo);
-	FillConsoleOutputCharacter(hConsoleOutput, ' ', ConsoleInfo.dwSize.X * SNumberRow, Pos, &Tmp);
-	FillConsoleOutputAttribute(hConsoleOutput, 15, ConsoleInfo.dwSize.X * SNumberRow, Pos, &Tmp);
-	SetConsoleCursorPosition(hConsoleOutput, Pos);
 }
 
 void Nocursortype(bool check) {

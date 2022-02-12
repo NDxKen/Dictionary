@@ -12,8 +12,8 @@ struct Mean
 
 struct Word
 {
-	string tu;
-	string loaitu;
+	string word;
+	string typeWord;
 	Mean* mean;
 	string* Example[5];
 	Word* pNext;

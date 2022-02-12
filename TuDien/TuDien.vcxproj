@@ -125,7 +125,9 @@
   <ItemGroup>
     <ClInclude Include="Console.h" />
     <ClInclude Include="Functions.h" />
+    <ClInclude Include="ReadWriteFile.h" />
     <ClInclude Include="Struct.h" />
+    <ClInclude Include="SubProcessing.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

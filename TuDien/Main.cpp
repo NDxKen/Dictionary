@@ -1,12 +1,13 @@
-#include"Functions.h"
+#include"ReadWriteFile.h"
 
 int main()
 {
-	//resizeConsole(130, 35);
+	SetConsoleTitle("Dictionary");
+	resizeConsole(130, 35);
 	ifstream FileIn;
+	ofstream FileOut;
 	WordList HashTable[26];
-	ReadFile(HashTable, FileIn);
-	/*WriteFile(HashTable);*/
-	DrawMainFrame();
+	ReadFile(FileIn, HashTable);
 	Menu(HashTable);
+	WriteFile(FileOut, HashTable);
 }

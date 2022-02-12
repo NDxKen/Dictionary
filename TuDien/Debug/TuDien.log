@@ -1,0 +1,24 @@
+﻿  Main.cpp
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Console.h(77,42): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(35,1): warning C4005: 'DELETE': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(8943): message : see previous definition of 'DELETE'
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(40,11): warning C4309: 'initializing': truncation of constant value
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(47,11): warning C4309: 'initializing': truncation of constant value
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(47,20): warning C4309: 'initializing': truncation of constant value
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(47,29): warning C4309: 'initializing': truncation of constant value
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(47,38): warning C4309: 'initializing': truncation of constant value
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(47,47): warning C4309: 'initializing': truncation of constant value
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(47,56): warning C4309: 'initializing': truncation of constant value
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(106,20): warning C4018: '<': signed/unsigned mismatch
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(127,20): warning C4018: '<': signed/unsigned mismatch
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\SubProcessing.h(135,20): warning C4018: '<': signed/unsigned mismatch
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(129,20): warning C4018: '<': signed/unsigned mismatch
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(134,22): warning C4018: '<': signed/unsigned mismatch
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(392,76): warning C4267: 'argument': conversion from 'size_t' to 'SHORT', possible loss of data
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(691,111): warning C4267: 'argument': conversion from 'size_t' to 'SHORT', possible loss of data
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(895,110): warning C4267: 'argument': conversion from 'size_t' to 'SHORT', possible loss of data
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(1049,79): warning C4267: 'argument': conversion from 'size_t' to 'SHORT', possible loss of data
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(1294,67): warning C4267: 'argument': conversion from 'size_t' to 'SHORT', possible loss of data
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(167): warning C4715: 'FindWordFirstFrame': not all control paths return a value
+D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\TuDien\Functions.h(505): warning C4715: 'FindMeanFirstFrameBaseOnMeanLastFrame': not all control paths return a value
+  TuDien.vcxproj -> D:\LEARN IN SCHOOL\HỌC NĂM 1_2\Course 2020\cdl & gt\TuDien\Debug\TuDien.exe
